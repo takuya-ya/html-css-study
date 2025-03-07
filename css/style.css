@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    background-color: #f5f2e5;
+    /* background-image: url(../img/bg-airplane.jpg); */
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+html{
+    font-size: 100%;
+}
+
+h1{
+    color: #0bd;
+    font-size: 2rem;
+    font-family: serif;
+}   
+
+h2{
+    font-size: 16px;
+        font-family: "游ゴシック体", "Yu Gothic", 'Yu Gothic', sans-serif;
+    
+}
+p{
+    font-size: 30px;
+    font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+}
+
+section{
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+section p{
+    border-bottom: 10px black double;
+    border-radius: 10px;
+}
+
+table{
+    margin: 5rem auto;
+    width: 80%;
+    border: 3px solid black;
+}
+
+ul{
+    list-style-type: none;
+}

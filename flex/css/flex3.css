@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.bongore{
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.pasta-img {
+    width: 40%;
+}
+
+.pasta-img img{
+    width: 100%;
+}
+
+.text-block{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title{
+    background-color: aqua;
+    padding-left: 1rem;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+.pasta-text {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.oil-img {
+    width: 20%;
+}
+
+.oil-img img {
+    width: 100%;
+
+}

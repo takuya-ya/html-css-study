@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" ">
+  <meta name="format-detection" content="telephone=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <h1>猫の一日</h1>
+    <h2>ひらすら寝ています</h2>
+    <p>
+        猫は毎日12〜16時間は睡眠をとると言われています。
+        ただし、熟睡している時間は意外と少なく、ほとんどが浅い眠りです。
+        物音がするとすぐ目を覚ますのはそのせいなんですね。
+    </p>
+    
+<hr>
+  <section>
+    <p>フォントサイズ確認</p>
+  </section>  
+<hr>
+
+  <h3>番号付き箇条書き</h3>
+  <ol>
+    <li>卵をわりほぐし、調味料を加える</li>
+    <li>卵焼き器にら卵液を1/4量を入れて広げる</li>
+    <li>半熟状になったら箸で手前に巻き、奥に移動させる</li>
+    <li>これを繰り返し、最後まで焼けたら完成</li>
+  </ol>
+
+  <h3>箇条書き</h3>
+  <ul>
+    <li>卵(3個)</li>
+    <li>しょうゆ（大さじ１）</li>
+    <li>みりん(大さじ)</li>
+    <li>塩（適量）</li>
+  </ul>
+
+  <h3>説明付きリスト</h3>
+  <dl>
+    <dt>卵</dt>
+    <dd>3個</dd>
+    <dt>しょうゆ</dt>
+    <dd>大さじ１</dd>
+    <dt>みりん</dt>
+    <dd>大さじ１</dd>
+    <dt>塩</dt>
+    <dd>適量</dd>
+  </dl>
+
+  <h3>画像挿入、画像にリンク付け</h3>
+  <P>今の期間限定メニュー</P>
+  <a href="https://www.mcdonalds.co.jp/" target="_blank">マクドナルド食べたい<br>
+    <img src="C:\Users\user_7097\Pictures\Screenshots\スクリーンショット 2025-02-27 113841.png" alt="マックフルーリー ニューヨーク チーズケーキ">
+  </a>
+
+  <h3>画像挿入</h3>
+  <img src="../img/sakura.jpg" alt="美しい桜">
+
+  <h3>箇条書き</h3>
+  <table>
+    <tr>
+      <th>プラン名</th>
+      <th>料金</th>
+    </tr>
+    <tr>
+      <td>わくわくプラン</td>
+      <td>月額2,900円</td>
+    </tr>
+    <tr>
+      <td>にこにこプラン</td>
+      <td>月額1,900円</td>
+    </tr>
+  </table>
+
+  <!-- 箇条書きを作成させる -->
+  <!-- table>(tr>th*2)+((tr>td*2)*2) -->
+
+  <h3>テーブル</h3>
+  <table border="1">
+    <tr>
+      <th colspan="2">セル１</th>
+    </tr>
+    <tr>
+      <td rowspan="2">セル３</td>
+      <td>セル４</td>
+    </tr>
+    <tr>
+      <td>セル６</td>
+    </tr>
+  </table>
+
+  <h3>フォーム</h3>
+  <form action="example.php" method="post" name="contact-form">
+    <table>
+      <tr>
+        <th>
+          名前
+        </th>
+        
+      </tr>
+      <tr>
+        <td>
+          <input type="text" placeholder="苗字　名前">
+        </td>
+
+      </tr>
+
+      <br>
+
+      性別：
+      男<input type="radio" name="gender" value="男">
+      女<input type="radio" name="gender" value="女" checked>
+      その他<input type="radio" name="gender" value="その他">
+      <br>
+      
+      好きな色：
+      <input type="checkbox" name="color" value="赤">赤
+      <input type="checkbox" name="color" value="青">青
+      <input type="checkbox" name="color" value="黄">黄
+      <br>
+      
+      血液型：
+      <select name="bloodtype">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="O">O</option>
+        <option value="AB">AB</option>
+        <option value="不明" selected>不明</option>
+      </select><br>
+      
+      <!-- テキストエリア -->
+      <textarea name="message" placeholder="メッセージを入力"></textarea>
+      <br>
+      
+      <!-- ボタン -->
+      <input type="submit" value="送信ボタン">
+      <br>
+      
+      <h1>フォームのラベル</h1>
+      行きたい国：
+      <input type="checkbox" name="travel" value="日本" id="Japan">
+      <label for="Japan">日本</label>
+      <input type="checkbox" name="travel" value="フランス" id="France">
+      <label for="France">フランス</label>
+      <input type="checkbox" name="travel" value="アメリカ" id="America">
+      <label for="America">アメリカ</label>
+    </table>
+    </form>
+  </body>
+
+</html>

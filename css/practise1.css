@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{
+    /* background-color: #f5f2e5;
+    background-image: url(../img/bg-airplane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; */
+}
+
+h1 {
+  font-family: "Noto Serif JP", serif;
+  color: blue;
+}
+
+h2 {
+    font-family: "Hachi Maru Pop", serif; 
+    font-size: 25px;
+    text-align: center;
+}
+
+p{
+    font-family: "M PLUS 1", serif; 
+    font-weight: bold;
+}
+
+div{
+    background: #0bd;
+    width: 50%;
+    height: 300px;
+    margin-top: 5rem;
+    margin-left: 50%;
+    padding: 40px;
+}
+
+div p{
+}
