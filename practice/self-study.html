@@ -1,79 +1,172 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ようこそ山内商店へ">
-    <meta name="format-detection" content="telephone=no">
-    <title>山内商店</title>
-    <link rel="stylesheet" href="./self-study.css">
-  </head>
-  <body>
-      <h1 class="hero">山内商店<span>心温まるおもてなし</span></h1>
-      <h2 class="first-message">
-        この度は当店にご来店いただきありがとうございます。<br>
-        是非、自慢の商品を食べていってください。
-      </h2>
 
-      <div class="products">
-          <div class="product-photo"><img src="../img/egg.jpg" alt="卵焼き"></div>
-          <div class="product-text">
-            <table class="product-info">
-              <td class="product-name">卵焼き</td>
-              <td class="product-price">800円（税込）</td>
-              <td class="product-explain">上質な卵焼きを丁寧に巻きました</td>
-            </table>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ようこそ山内商店へ">
+  <meta name="format-detection" content="telephone=no">
+  <title>山内商店</title>
+  <link rel="stylesheet" href="./self-study.css">
+</head>
 
-          <div class="product-photo"><img src="../img/friedChicken.jpg" alt="鶏の唐揚げ"></div>
-          <div class="product-text">
-            <table class="product-info">
-              <td class="product-name">鶏の唐揚げ</td>
-              <td class="product-price">1000円（税込）</td>
-              <td class="product-explain">当店独自の漬込み液を使用してます</td>
-            </table>
-          </div>
+<body>
 
-          <div class="product-photo"><img src="../img/chize.jpg" alt="海苔天チーズ"></div>
-          <div class="product-text">
-            <table class="product-info">
-              <td class="product-name">海苔天チーズ</td>
-              <td class="product-price">300円（税込）</td>
-              <td class="product-explain">瀬戸内海の海苔とフランス産ジェノベチーズを使用</td>
-            </table>
-          </div>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#products">メニュー</a></li>
+        <li><a href="#">こだわり</a></li>
+        <li><a href="#">アクセス</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <div class="product-photo"><img src="../img/yakitori_negima.jpg" alt="ネギ身"></div>
-          <div class="product-text">
-            <table class="product-info">
-              <td class="product-name">炭火焼鳥 ネギ身</td>
-              <td class="product-price">500円(一本)（税込）</td>
-              <td class="product-explain">華見鶏を使用して、備長炭でじっくり焼き上げました</td>
-            </table>
-          </div>
+  <h1 class="hero">山内商店<span>心温まるおもてなし</span></h1>
+  <div class="message">
+    <h2 class="first-message">
+      この度は当店にご来店いただき<br>
+      まことにありがとうございます。<br>
+      是非、当店自慢の商品を<br>
+      食べていってください。
+    </h2>
+  </div>
 
-          <div class="product-photo"><img src="../img/curry.jpeg" alt="カレー"></div>
-          <div class="product-text">
-            <table class="product-info">
-              <td class="product-name">独自カレー</td>
-              <td class="product-price">1500円（税込）</td>
-              <td class="product-explain">地元のゴロゴロ野菜と佐賀牛を使用。独自のスパイスをブレンド</td>
-            </table>
-          </div>
-
-          <div class="product-photo"><img src="../img/soba.jpg" alt="〆そば"></div>
-          <div class="product-text">
-            <table class="product-info">
-              <td class="product-name">〆そば</td>
-              <td class="product-price">800円（税込）</td>
-              <td class="product-explain">〆のいっぱい</td>
-            </table>
-          </div>
-
-          
+  <div class="products" id="products">
+    <div class="product">
+      <div class="product-photo"><img src="../img/egg.jpg" alt="卵焼き"></div>
+      <div class="product-text">
+        <table class="product-info">
+          <tr>
+            <td class="product-name">卵焼き</td>
+          </tr>
+          <tr>
+            <td class="product-price">800円（税込）</td>
+          </tr>
+          <tr>
+            <td class="product-explain">上質な卵焼きを丁寧に巻きました</td>
+          </tr>
+        </table>
       </div>
+    </div>
 
-      
+    <div class="product">
+      <div class="product-photo"><img src="../img/friedChicken.jpg" alt="鶏の唐揚げ"></div>
+      <div class="product-text">
+        <table class="product-info">
+          <tr>
+            <td class="product-name">鶏の唐揚げ</td>
+          </tr>
+          <tr>
+            <td class="product-price">1000円（税込）</td>
+          </tr>
+          <tr>
+            <td class="product-explain">当店独自の漬込み液を使用してます</td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-  </body>
+    <div class="product">
+      <div class="product-photo"><img src="../img/chize.jpg" alt="海苔天チーズ"></div>
+      <div class="product-text">
+        <table class="product-info">
+          <tr>
+            <td class="product-name">海苔天チーズ</td>
+          </tr>
+          <tr>
+            <td class="product-price">300円（税込）</td>
+          </tr>
+          <tr>
+            <td class="product-explain">瀬戸内海の海苔とフランス産ジェノベチーズを使用</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-photo"><img src="../img/yakitori_negima.jpg" alt="ネギ身"></div>
+      <div class="product-text">
+        <table class="product-info">
+          <tr>
+            <td class="product-name">炭火焼鳥 ネギ身</td>
+          </tr>
+          <tr>
+            <td class="product-price">500円(一本)（税込）</td>
+          </tr>
+          <tr>
+            <td class="product-explain">華見鶏を使用して、備長炭でじっくり焼き上げました</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-photo"><img src="../img/curry.jpeg" alt="カレー"></div>
+      <div class="product-text">
+        <table class="product-info">
+          <tr>
+            <td class="product-name">独自カレー</td>
+          </tr>
+          <tr>
+            <td class="product-price">1500円（税込）</td>
+          </tr>
+          <tr>
+            <td class="product-explain">地元のゴロゴロ野菜と佐賀牛を使用。独自のスパイスをブレンド</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-photo"><img src="../img/soba.jpg" alt="〆そば"></div>
+      <div class="product-text">
+        <table class="product-info">
+          <tr>
+            <td class="product-name">〆そば</td>
+          </tr>
+          <tr>
+            <td class="product-price">800円（税込）</td>
+          </tr>
+          <tr>
+            <td class="product-explain">〆のいっぱい</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="page2">
+      <section class="particulars">
+        <h2 class="particulars-title">当店のこだわり</h2>
+        <div class="particulars-contents">
+          <div class="particulars-img1"><img src="../img/particulars1.jpg" alt=""></div>
+          <div class="particulars-text-container">
+            <p class="particulars-text">「厳選した備長炭を使用し、<br>
+              香ばしくふっくら焼き上げます。」</p>
+          </div>
+        </div>
+        <div class="particulars-contents">
+          <div class="particulars-img2"><img src="../img/particulars2.jpg" alt=""></div>
+          <div class="particulars-text-container">
+            <p class="particulars-text">「備長炭の強い火力と遠赤外線効果を活かし、外はパリッと中はジューシーに焼き上げる職人技で、最高の焼き鳥を提供します。」</p>
+          </div>
+        </div>
+        <div class="particulars-contents">
+          <div class="particulars-img3"><img src="../img/particulars3.jpg" alt=""></div>
+          <div class="particulars-text-container">
+            <p class="particulars-text">「温かみのあるカウンター席で、職人の技を間近に感じながら、くつろぎのひとときをお楽しみいただけます。」</p>
+          </div>
+        </div>  
+      </section>
+
+      <section class="history">
+        <p>
+          「昭和20年、戦後の小さな食堂から始まり、地元の人々に支えられながら成長。 <br>
+          三代にわたり伝統の味を受け継ぎ、時代に合わせた新たな挑戦も続ける老舗として、<br>
+          多くの人々に愛されるお店へと発展。」
+        </p>
+      </section>
+    </div>
+</body>
+
 </html>
