@@ -1,38 +1,97 @@
 @charset "UTF-8";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(255, 255, 253);
+    box-sizing: border-box;
 }
 
 .header-text {
     width: 80%;
     margin: auto;
-    background-color: rgb(241, 247, 159);
-    height: 20px;
     text-align: center;
-    /*  */
-    border-bottom: 2px black solid;
+    margin-bottom: 10px; /* 適宜調整 */
+    color: #0000FF; /* 青など目立つ色 */
+    font-weight: bold; /* 太字 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
+}
+
+/* 真中にスペース挿入 */
+.access, .header-tell {
+    margin: 50px;
 }
 
 .header-address {
-    height: 30px;
-    background-color: rgb(253, 124, 124);
+    background-color: rgb(253, 124, 124, 0.1);
     display: flex;
-    justify-content: space-around;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    color: #0000FF; /* 青など目立つ色 */
+    font-weight: bold; /* 太字 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
+}
+
+.header-address a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.header-address p, .header-address a{
+    border: 1px solid black;
+    padding: 0 50px;
+    margin: 10px;
+}
+
+.header-address .access, .header-address .header-tell {
+    display: flex;
+}
+
+.header-tell .tell-number {
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.header-tell .tell-info {
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+}
+
+
+/* ヘッダーナビ */
+
+.header-menu {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.header-menu {
-    background-color: rgb(236, 86, 86);
-    display: flex;
-    justify-content: space-around;
+.header-menu a {
+    color: #0000FF; /* 青など目立つ色 */
+    font-weight: bold; /* 太字 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
+}
+
+.logo img{
+    border-radius: 40%;
 }
 
 ul {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
 }
 
 li {
@@ -40,10 +99,14 @@ li {
     margin: auto 10px;
 }
 
+.header-menu-subtittle {
+    color: red;
+}
+
 h2 {
     text-align: center;
 }
-.craftsmanShip-top {
+.craftsmanship-top {
     text-align: center;
     font-weight: bold;
 }
@@ -60,10 +123,38 @@ h2 {
     align-items: center;
 }
 
+/* ヒーロー */
+
+header {
+    background: url(../img/hero.jpg) center/cover;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 3rem;
+}
+
 /* 逸品料理 */
+
+.craftsmanship {
+    display: flex;
+    justify-content: center;
+}
+
+.craftsmanship-logo {
+    text-align: center;
+}
+
+.craftsmanship-logo p {
+    color: red;
+}
+
+.craftsmanship-top-subTitle {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0;
+}
 .speciality-dishes-contents {
     display: flex;
-    
+
 }
 
 .speciality-dishes-contents-left {
@@ -110,7 +201,6 @@ h2 {
     align-items: center;
     font-size: 2rem;
     font-weight: bolder;
-    
 }
 
 .recruit-contents p {
@@ -123,7 +213,7 @@ h2 {
 }
 
 /* 地図 */
-.map {
+.map-img {
     margin-top: 50px;
 }
 
@@ -174,6 +264,3 @@ footer {
     background-color: rgb(212, 38, 38);
     text-align: center;
 }
-
-
-
