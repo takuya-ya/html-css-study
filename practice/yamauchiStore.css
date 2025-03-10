@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(255, 255, 253);
+}
+
+.header-text {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(241, 247, 159);
+    height: 20px;
+    text-align: center;
+    /*  */
+    border-bottom: 2px black solid;
+}
+
+.header-address {
+    height: 30px;
+    background-color: rgb(253, 124, 124);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu {
+    background-color: rgb(236, 86, 86);
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    margin: auto 10px;
+}
+
+h2 {
+    text-align: center;
+}
+.craftsmanShip-top {
+    text-align: center;
+    font-weight: bold;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+.material, .charcoal, .how-to-cook {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 逸品料理 */
+.speciality-dishes-contents {
+    display: flex;
+    
+}
+
+.speciality-dishes-contents-left {
+    background: url(../img/makigusi.png) no-repeat center/cover;
+    width: 80%;
+    height: 30rem;
+    margin-left: 60px;
+}
+
+.appeal-women {
+    background-color: rgb(238, 162, 162);
+    font-size: 14px;
+    text-align: center;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.speciality-dishes-explain {
+    text-align: center;
+    margin: 100px 100px;
+}
+
+.speciality-dishes-contents-right-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.speciality-dishes-contents-right-img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+}
+
+/* 求人情報 */
+
+.recruit-contents {
+    background: url(../img/particulars2.jpg) no-repeat center/cover;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    
+}
+
+.recruit-contents p {
+    text-align: center;
+}
+
+.recruit-contents p {
+    width: 50%;
+    text-align: center;
+}
+
+/* 地図 */
+.map {
+    margin-top: 50px;
+}
+
+/* フッター */
+
+footer {
+    width: 100%;
+}
+
+.footer-menu {
+    width: 100%;
+    background-color: rgb(214, 46, 46);
+}
+
+.footer-menu ul {
+    width: 100%;
+    display: flex; /* 横並び */
+    /* gap: 5px;  */
+}
+
+.footer-menu ul li a {
+    width: 100%;
+}
+
+.footer-contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contents img {
+    /* height: ; */
+    /* width: 100px; */
+}
+
+.footer-info {
+
+}
+
+.address, .tell, .opennig-times, .closed-day {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.copyright {
+    background-color: rgb(212, 38, 38);
+    text-align: center;
+}
+
+
+
