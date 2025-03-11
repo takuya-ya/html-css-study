@@ -299,7 +299,12 @@ header {
 
 /* 地図 */
 .map-img {
+    width: 100%;
     margin-top: 50px;
+}
+
+.map-img img {
+    width: 100%;
 }
 
 /* フッター */
