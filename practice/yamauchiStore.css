@@ -10,12 +10,13 @@ body {
 }
 
 .header-text {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    text-align: center;
     margin-bottom: 10px; /* 適宜調整 */
-    color: #0000FF; /* 青など目立つ色 */
+    text-align: center;
+    font-size: 19px;
     font-weight: bold; /* 太字 */
+    color: #f5f5fa; /* 青など目立つ色 */
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
 }
 
@@ -32,7 +33,8 @@ body {
     align-items: center;
     height: 80px;
     padding: 0 20px;
-    color: #0000FF; /* 青など目立つ色 */
+    font-size: 25px;
+    color: #ececf7; /* 青など目立つ色 */
     font-weight: bold; /* 太字 */
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
 }
@@ -43,6 +45,7 @@ body {
     justify-content: center;
     text-decoration: none;
     border-radius: 50%;
+    color: rgb(235, 119, 119);
 }
 
 .header-address p, .header-address a{
@@ -74,10 +77,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
 }
 
 .header-menu a {
-    color: #0000FF; /* 青など目立つ色 */
+    color: #f3f3f7; /* 青など目立つ色 */
     font-weight: bold; /* 太字 */
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
 }
@@ -106,6 +110,12 @@ li {
 h2 {
     text-align: center;
 }
+
+/* こだわり */
+
+.craftsmanship-section {
+    margin-bottom: 48px;
+}
 .craftsmanship-top {
     text-align: center;
     font-weight: bold;
@@ -114,13 +124,52 @@ h2 {
 .contents {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    height: 200px;
+}
+
+.contents p {
+    color: #f5f5fa;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0;
+
+}
+
+.contents a {
+    color: #ececf7;
+    text-decoration: none;
+}
+
+.content {
+    background-color: rgba(255, 0, 0, 0.356);
+    width: 100%;
 }
 
 .material, .charcoal, .how-to-cook {
-    width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.material .content, .charcoal .content, .how-to-cook .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.material {
+    background: url(../img/material.png) center/cover;
+}
+
+.charcoal {
+    background: url(../img/chacorl.jpg) center/cover;
+}
+
+.how-to-cook {
+    background: url(../img/how-to-cook.png) center/cover;
 }
 
 /* ヒーロー */
@@ -132,8 +181,7 @@ header {
     margin-bottom: 3rem;
 }
 
-/* 逸品料理 */
-
+/*　こだわり */
 .craftsmanship {
     display: flex;
     justify-content: center;
@@ -152,9 +200,21 @@ header {
     align-items: flex-end;
     margin-top: 0;
 }
+
+/* 逸品料理 */
+
+.speciality-dishes-section{
+    margin-bottom: 100px;
+}
+
+.speciality-dishes-top {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
+}
 .speciality-dishes-contents {
     display: flex;
-
 }
 
 .speciality-dishes-contents-left {
@@ -235,13 +295,20 @@ footer {
 }
 
 .footer-menu ul li a {
+    color: #ececf7;
     width: 100%;
+    text-decoration: none; /* 下線を消したい場合 */
 }
 
+footer {
+    width: 100%;
+
+}
 .footer-contents {
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 
 .footer-contents img {
@@ -249,16 +316,30 @@ footer {
     /* width: 100px; */
 }
 
-.footer-info {
-
-}
-
 .address, .tell, .opennig-times, .closed-day {
     display: flex;
     justify-content: space-around;
 }
 
+.opennig-times {
+    justify-content: space-between;
 
+}
+
+.footer-info .item{
+    width: 300px;
+    text-align: center;
+}
+
+.opennig-times-item {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.opennig-times .content {
+    width: 387px;
+}
 
 .copyright {
     background-color: rgb(212, 38, 38);
