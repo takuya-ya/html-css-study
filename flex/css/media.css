@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@media(min-width: 429px) {
+    .sp-br {
+        display: none;
+    }
+}
+
+@media(max-width:428px) {
+    .pc-menu {
+        display: none;
+    }
+
+    .hero {
+        font-size: 2rem;
+    }
+    
+    .hero span {
+        font-size: 1rem;
+    }
+
+    .content,
+    .content:nth-of-type(2n) {
+        flex-direction: column;
+    }
+
+    .pasta-photo,
+    .text-block{
+        width: 90%;
+    }
+
+    .list-group {
+        width: 50%;
+        height: 15rem;
+        border: 1px grey dashed;
+        margin-bottom: 2rem;  
+    }
+}
