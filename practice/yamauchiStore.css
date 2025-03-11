@@ -70,7 +70,49 @@ body {
     align-items: center; /* 縦方向の中央揃え */
 }
 
-/* トップに戻る */
+/* SNSボタン */
+.SNS-button {
+    position: fixed; /* 画面上に固定 */
+    right: 1rem; /* 右端に配置 */
+    top: 50%; /* 画面の中央付近 */
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    z-index: 1000; /* 他の要素より前面に */
+}
+
+.SNS-button-photo {
+    width: 50px; /* アイコンのサイズ */
+    height: 50px;
+    border-radius: 50%; /* 丸形 */
+    background-color: white; /* 必要なら背景 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 軽い影 */
+}
+
+.SNS-button .instagram a {
+    background: url(../img/instagram-icon.jpg) center/cover;
+    width: 50px; /* アイコンのサイズ */
+    height: 50px;
+    border-radius: 15px; /* 丸形 */
+
+}
+
+.SNS-button .line a {
+    background: url(../img/LINE_Brand_icon.png) center/cover;
+    border-radius: 50%; /* クリック範囲も丸くする */
+}
+
+.SNS-button .facebook a{
+    background: url(../img/Facebook_Logo_Primary.png) center/cover;
+}
+
+.SNS-button-photo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px; /* テキストを非表示（視認性を損なわない） */
+}
+
+/* フローティングボタン */
 .circle {
     display: flex;
     align-items: center;
