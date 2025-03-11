@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.flex-pasta {
+    display: flex;
+    /* width: 80%; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* align-items: center;  */
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    align-content: flex-end;
+
+.pasta-img {
+    width: 22%;
+}
+
+.pasta-img img {
+    width: 100%;
+}
+
+}
