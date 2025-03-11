@@ -70,6 +70,34 @@ body {
     align-items: center; /* 縦方向の中央揃え */
 }
 
+/* トップに戻る */
+.circle {
+    display: flex;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: rgb(122, 112, 114);
+    right: 1rem;
+    bottom: 1rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+.circle a {
+    width: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ececf7;
+    text-decoration: none;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.circle:hover {
+    background-color: red;
+}
 
 /* ヘッダーナビ */
 
@@ -173,7 +201,6 @@ h2 {
 }
 
 /* ヒーロー */
-
 header {
     background: url(../img/hero.jpg) center/cover;
     width: 100vw;
@@ -202,7 +229,6 @@ header {
 }
 
 /* 逸品料理 */
-
 .speciality-dishes-section{
     margin-bottom: 100px;
 }
@@ -252,7 +278,6 @@ header {
 }
 
 /* 求人情報 */
-
 .recruit-contents {
     background: url(../img/particulars2.jpg) no-repeat center/cover;
     display: flex;
