@@ -1,19 +1,28 @@
 @charset "UTF-8";
 
-@media(max-width: 1301px) {
-    .header-address p, .header-address a{
-        font-size: large;
+@media (min-width: 960px) {
+    .header-text .sp-br {
+        display: none;
     }
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 900px) {
+    header .header-address {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        background-color: red;
+        font-size: 100%;
+    }
 
+    header .circle {
+        display: none;
+    }
+
+    .header-address .map-link {
+        color: black;
+    }
 }
-
-@media(max-width:960) {
-
-}
-
 
 html {
     scroll-behavior: smooth;
@@ -101,17 +110,6 @@ body {
     font-weight: bold;
     /* フォントサイズ拡大の為 */
     margin: 15px 0;
-}
-
-/* tell-numbeerのfont拡大で、tell-infoの高さも拡大してしまい、左端.accessと枠の高さが異なる状態になる。max-heightでnumberの影響解除 */
-.header-tell .tell-info {
-    /* font-size: 5px; */
-    /* width: 220px; */
-    /* max-height: 30px; /* 最小高さを固定 */
-    /* display: flex;
-    align-items: center; */
-
-
 }
 
 /* SNSボタン */
