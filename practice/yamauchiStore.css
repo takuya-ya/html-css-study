@@ -7,11 +7,11 @@
 }
 
 @media(max-width: 1200px) {
-    
+
 }
 
 @media(max-width:960) {
-    
+
 }
 
 
@@ -26,6 +26,7 @@ body {
 }
 
 .header-text {
+    background-color: rgba(0, 0, 0, 0.514);
     width: 100%;
     margin: auto;
     margin-bottom: 10px; /* 適宜調整 */
@@ -36,23 +37,44 @@ body {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
 }
 
+/* ヘッダーアドレス */
 /* 真中にスペース挿入 */
 .access, .header-tell {
-    margin: 50px;
+    /* margin: 50px;
+    width: 600px; */
 }
 
 .header-address {
-    background-color: rgb(253, 124, 124, 0.1);
+    width: 100%;
+    background-color: rgba(253, 124, 124, 0.308);
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
     height: 80px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     font-size: 25px;
     color: #ececf7; /* 青など目立つ色 */
     font-weight: bold; /* 太字 */
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* 白っぽい影 */
+}
+
+.header-address .access, .header-address .header-tell {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-address p, .header-address a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 10px;
+    /* width: 200px; */
+    text-align: center;
 }
 
 .header-address a {
@@ -62,28 +84,34 @@ body {
     text-decoration: none;
     border-radius: 50%;
     color: rgb(235, 119, 119);
+    padding: 10px;
 }
 
-.header-address p, .header-address a{
-    border: 1px solid black;
-    padding: 0 20%;
-    margin: 10px;
-}
+.header-address .how-access, .header-tell .tell-info {
+    background-color: rgba(255, 0, 0, 0.438);
+    margin-right: 20px;
+    padding: 0 20px;
 
-.header-address .access, .header-address .header-tell {
-    display: flex;
 }
 
 .header-tell .tell-number {
     border: none;
+    width: auto;
     font-size: 30px;
     font-weight: bold;
-    padding: 0 10px;
+    /* フォントサイズ拡大の為 */
+    margin: 15px 0;
 }
 
+/* tell-numbeerのfont拡大で、tell-infoの高さも拡大してしまい、左端.accessと枠の高さが異なる状態になる。max-heightでnumberの影響解除 */
 .header-tell .tell-info {
-    display: flex;
-    align-items: center; /* 縦方向の中央揃え */
+    /* font-size: 5px; */
+    /* width: 220px; */
+    /* max-height: 30px; /* 最小高さを固定 */
+    /* display: flex;
+    align-items: center; */
+
+
 }
 
 /* SNSボタン */
@@ -163,6 +191,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 15rem;
     font-size: 30px;
 }
 
@@ -397,7 +426,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .footer-contents img {
