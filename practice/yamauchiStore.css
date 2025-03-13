@@ -53,7 +53,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     /* width: 100vw; */
 }
 
@@ -400,6 +400,27 @@ h2 {
     border-radius: 50%;
 }
 
+
+/* 予約フォーム */
+
+
+/* 予約ボタン */
+.btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: rgb(219, 94, 94);
+    color: white;
+    border-radius: 8px;
+    padding: .8rem 1.5rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(255, 1, 1);
+    transition: background-color 1s ease-out 200ms;
+}
+
+
 /* 求人情報 */
 .recruit-contents {
     background: url(../img/particulars2.jpg) no-repeat center/cover;
@@ -440,18 +461,24 @@ footer {
 .footer-menu {
     width: 100%;
     background-color: rgb(248, 8, 8);
+    padding: 2rem 0;
+    font-size: 1.4rem;
 }
 
 .footer-menu ul {
     width: 100%;
     display: flex; /* 横並び */
     /* gap: 5px;  */
+    list-style-type: disc;
+    list-style-position: inside;
+
+    
 }
 
 .footer-menu ul li a {
     color: #ececf7;
     width: 100%;
-    text-decoration: none; /* 下線を消したい場合 */
+    text-decoration: none; 
 }
 
 /* フッターコンテンツ */
@@ -503,5 +530,7 @@ footer {
 .copyright {
     background-color: red;
     text-align: center;
-
+    padding:  2rem 0;
+    margin-top: 6rem;
+    color: #fff;
 }
