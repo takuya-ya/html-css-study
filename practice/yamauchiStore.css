@@ -23,6 +23,27 @@
     .header-address .map-link {
         color: black;
     }
+
+    header .header-menu {
+        display: grid;
+        grid-template-areas: 
+            "img img"
+            "menu-left menu-left"
+            "menu-right menu-right";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .header-menu .logo { 
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+    } 
+    .menu-left { grid-area: menu-left}
+    .menu-right { grid-area: menu-right}
+
+    .header-menu .logo {
+        padding: auto;
+    }
 }
 
 * {
@@ -40,6 +61,7 @@ body {
     width: 100%;
     background-color: rgb(255, 255, 253);
 }
+
 /*
 html, body {
     display: block;
