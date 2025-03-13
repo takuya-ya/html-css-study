@@ -16,35 +16,65 @@
         max-width: 100vw;
     }
 
-    header .circle {
-        display: none;
-    }
-
     .header-address .map-link {
         color: black;
     }
 
     header .header-menu {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "img img"
             "menu-left menu-left"
             "menu-right menu-right";
         grid-template-columns: 1fr 1fr;
     }
-    
-    .header-menu .logo { 
+
+    .header-menu .logo {
         grid-area: img;
         display: flex;
         justify-content: center;
-    } 
+    }
+
     .menu-left { grid-area: menu-left}
     .menu-right { grid-area: menu-right}
 
     .header-menu .logo {
         padding: auto;
     }
+    
+    body .circle {
+        bottom: 6rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    body .circle a {
+        font-size: 0.45rem;
+    }
+
+    footer {
+        margin-bottom: 6rem;
+    }
+
+    .footer-info .item, .footer-info-content {
+        font-size: 80%;
+    }
+
+    .footer-info .item {
+        font-size: 80%;
+    }
 }
+
+    @media (max-width: 610px) {
+
+    }
+    @media (max-width: 428px) {
+
+    }
+    @media (max-width: 375px) {
+
+    }
+
 
 * {
     box-sizing: border-box;
@@ -472,13 +502,13 @@ footer {
     list-style-type: disc;
     list-style-position: inside;
 
-    
+
 }
 
 .footer-menu ul li a {
     color: #ececf7;
     width: 100%;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* フッターコンテンツ */
@@ -497,7 +527,6 @@ footer {
     align-content: space-around;
 }
 
-
 .address, .tell, .opennig-times,  .closed-day
 {
     width: 100%;
@@ -512,8 +541,8 @@ footer {
     display: flex;
     justify-content: center;
     background-color: red;
-    color: #ececf7;
     width: 30%;
+    color: #ececf7;
     /* margin-right: 10px; */
 }
 
