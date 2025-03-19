@@ -87,10 +87,10 @@ body {
     background-color: rgb(255, 255, 253);
 }
 
-/*
+
 html, body {
-    display: block;
-} */
+    font-size: 100%;
+}
 
 .header-text {
     background-color: rgba(0, 0, 0, 0.863);
@@ -427,17 +427,48 @@ h2 {
 
 
 /* 予約フォーム */
+.reserve {
+    margin: 5rem 0;
+    width: 100%;
+} 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap:15px
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form label {
+    width: 10%;
+    text-align: center;
+}
+.form-group input {
+    width: 100%; /* 全ての input の幅を統一 */
+    max-width: 200px; /* 必要なら最大幅を設定 */
+    text-align: center;
+}
 
 
 /* 予約ボタン */
 .btn {
-    display: inline-block;
-    font-size: 1.2rem;
+    display: block;
+    width: 12%;
+    height: 50px;
+    font-size: 1rem;
     background-color: rgb(219, 94, 94);
     color: white;
     border-radius: 8px;
     padding: .8rem 1.5rem;
+    margin: 30px auto;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -496,8 +527,6 @@ footer {
     /* gap: 5px;  */
     list-style-type: disc;
     list-style-position: inside;
-
-
 }
 
 .footer-menu ul li a {
@@ -522,6 +551,7 @@ footer {
     width: 50%;
     height: auto;
 }
+
 .page-footer .info {
     width: 70%;
 }
