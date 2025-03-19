@@ -513,10 +513,14 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.page-footer .footer-contents-img {
+.page-footer .page-footer-img {
     width: 30%;
     display: flex;
     justify-content: right;
+}
+.page-footer-img img {
+    width: 50%;
+    height: auto;
 }
 .page-footer .info {
     width: 70%;
