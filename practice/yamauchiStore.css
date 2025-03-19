@@ -89,7 +89,7 @@ body {
 
 
 html, body {
-    font-size: 100%;
+    font-size: 1.1vw;
 }
 
 .header-text {
@@ -428,29 +428,44 @@ h2 {
 
 /* 予約フォーム */
 .reserve {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 5rem 0;
     width: 100%;
+    gap: 15px;
 } 
+
+.reserve h2 {
+    border: #272730 solid;
+    width: 15%;
+    margin-bottom: 10px;
+
+}
 form {
-    width: 100%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin: auto;
     gap:15px
 }
 .form-group {
     display: flex;
     justify-content: center;
     width: 100%;
+    gap: 10px;
 }
-form label {
-    width: 10%;
+.form-group label {
+    width: 20%;
     text-align: center;
+    border: #272730 solid;
 }
 .form-group input {
-    width: 100%; /* 全ての input の幅を統一 */
+    width: 80%; /* 全ての input の幅を統一 */
     max-width: 200px; /* 必要なら最大幅を設定 */
     text-align: center;
 }
@@ -458,15 +473,18 @@ form label {
 
 /* 予約ボタン */
 .btn {
-    display: block;
-    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     height: 50px;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     background-color: rgb(219, 94, 94);
     color: white;
     border-radius: 8px;
-    padding: .8rem 1.5rem;
-    margin: 30px auto;
+    /* padding: .8rem 1.5rem; */
+    /* margin: auto; */
     text-decoration: none;
     text-align: center;
 }
