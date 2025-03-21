@@ -85,8 +85,10 @@
 body {
     width: 100%;
     background-color: rgb(255, 255, 253);
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
 
 html, body {
     font-size: 1.1vw;
@@ -424,33 +426,40 @@ h2 {
     width: 13rem;
     border-radius: 50%;
 }
-
+/* 予約フォームとインスタグラム埋め込み */
+.reserve-sns-wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    /* gap: 10px; */
+    margin: 0 auto;
+}
 
 /* 予約フォーム */
 .reserve {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin: 5rem 0;
-    width: 100%;
+    /* margin: 5rem 0; */
+    width: 50%;
     gap: 15px;
 } 
-
-.reserve h2 {
-    border: #272730 solid;
-    width: 15%;
-    margin-bottom: 10px;
+.reserve h3 {
+    /* border: #272730 solid; */
+    width: 50%;
+    text-align: center;
+    /* margin-bottom: 10px; */
 
 }
 form {
-    width: 30%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin: auto;
+    /* margin: auto; */
     gap:15px
 }
 .form-group {
@@ -460,16 +469,20 @@ form {
     gap: 10px;
 }
 .form-group label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20%;
     text-align: center;
+    
     border: #272730 solid;
 }
 .form-group input {
     width: 80%; /* 全ての input の幅を統一 */
-    max-width: 200px; /* 必要なら最大幅を設定 */
+    max-width: 400px; /* 必要なら最大幅を設定 */
+    height: 3rem;
     text-align: center;
 }
-
 
 /* 予約ボタン */
 .btn {
@@ -488,13 +501,16 @@ form {
     text-decoration: none;
     text-align: center;
 }
-
 .btn:hover {
     background-color: rgb(255, 1, 1);
-    transition: background-color 1s ease-out 200ms;
+    transition: backgrocolor 1s ease-out 200ms;
 }
 
+
 /* インスタグラム */
+.sns {
+    width: 50%;
+}
 .sns-item {
     margin-bottom: 2rem;
     display: flex;
@@ -506,7 +522,7 @@ form {
     margin-bottom: .5rem;
 }
 .font-english {
-    font-family: 'Philosopher', 'sans-serif';
+    /* font-family: 'Philosopher', 'sans-serif'; */
     font-weight: normal;
 }
 .heading-medium {
@@ -518,9 +534,13 @@ form {
 }
 
 /* 求人情報 */
+.recruit-info .subtitle {
+    margin: 2rem 2rem;
+}
 .recruit-contents {
     background: url(../img/particulars2.jpg) no-repeat center/cover;
     display: flex;
+    width: 100%;
     height: 300px;
     justify-content: center;
     align-items: center;
@@ -548,7 +568,6 @@ form {
 }
 
 /* フッター */
-
 footer {
     width: 100%;
 }
