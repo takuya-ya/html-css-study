@@ -434,7 +434,6 @@ h2 {
     /* gap: 10px; */
     margin: 0 auto;
 }
-
 /* 予約フォーム */
 .reserve {
     display: flex;
@@ -443,7 +442,6 @@ h2 {
     align-items: center;
     /* margin: 5rem 0; */
     width: 50%;
-    gap: 15px;
 } 
 .reserve h3 {
     /* border: #272730 solid; */
@@ -505,7 +503,6 @@ form {
     background-color: rgb(255, 1, 1);
     transition: backgrocolor 1s ease-out 200ms;
 }
-
 
 /* インスタグラム */
 .sns {
