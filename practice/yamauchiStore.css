@@ -494,6 +494,28 @@ form {
     transition: background-color 1s ease-out 200ms;
 }
 
+/* インスタグラム */
+.sns-item {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sns-item .header-medium {
+    margin-bottom: .5rem;
+}
+.font-english {
+    font-family: 'Philosopher', 'sans-serif';
+    font-weight: normal;
+}
+.heading-medium {
+    font-size: 3rem;
+    text-align: center;
+}
+.instagram-media {
+    margin: auto;
+}
 
 /* 求人情報 */
 .recruit-contents {
