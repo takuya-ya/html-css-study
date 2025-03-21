@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+}
+
+
+/* 基本 */
+
+/* 全称 */
+.post * {
+	margin: 0;
+}
+
+.post img {
+	width: 100%;
+	height: auto;
+	/* あまり使わない */
+	vertical-align: bottom;
+}
+
+
+
+
