@@ -111,6 +111,8 @@ body {
 	quotes: '“' '”';
 	display: grid;
 	/* 横に並べる為のプロパティ */
+	/* columnなので縦に要素が並ぶわけではない */
+	/* 要素が縦で横並びになる */
 	grid-auto-flow: column;
 	column-gap: 5px;
 
