@@ -21,15 +21,106 @@ body	{margin: 0;
 	--side:20px;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	/* autoに */
 	grid-template-rows: repeat(2, auto);
 	row-gap: 30px;
 	/* 変数の適用 */
 	margin: 0 var(--side) 30px;
+	font-family: 'Noto Sans Japanese', sans-serif;
 }
 
+/* 大きい画像 */
+.orange-photo {
+	grid-column: 1/13;
+	grid-row: 1;
+	/* 変数呼び出しと計算 */
+	margin: 0 calc( var(--side) * -1);
+}
+
+.orange-photo img {
+	height: 100%;
+	object-fit: cover;
+	/* 横幅が変わっても常に-10px出来る */
+	width: cald(100% -10px);
+
+}
+
+/*テキスト */
+.orange-text {
+	/* グリッドカラムの指定方法 */
+	/* span X番目の線まで〇列分 X */
+	grid-column: span 5 /13;
+	grid-row: 1;
+	z-index: 10;
+	color: #fff;
+	/* 縦書き、右から左 right to left */
+	writing-mode: vertical-rl;
+	text-shadow: 0px 0px 20px #000;
+	justify-self: center;
+	align-self: center;
+	/* テキストのgrid */
+	display: grid;
+	row-gap: 15px;
+	justify-items: end;
+	padding: 40px 0;
+}
+
+.orange-text h2 {
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 1.5;
+	padding-bottom: 20px;
+}
+
+.orange-text p {
+	height: 18em;
+	font-size: 16px;
+	/* h2よりは小さく */
+	font-weight: 500;
+	/* 小さい文字なので行間を開ける */
+	line-height: 1.8;
+}
+
+/*  */
+.orange-sub {
+	grid-column: 1/span 6;
+	grid-row: 2;
+	/* サブ情報のgrid */
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 10px;
+
+}
 .orange-sub img {
 	max-width: 120px;
 }
 
+.orange-sub p {
+	font-size: 14px;
+	line-height: 1.5;
+}
 
+@media (max-width:767px) {
+	.orange-text {
+		justify-self: end;
+	}
+	
+	.orange-sub {
+		grid-column: 1/13;
+	}
+
+	/* 背景画像を黒くする二通りのパターン */
+	.orange::after {
+		grid-column: 1/13;
+		grid-row: 1;
+		content: '';
+		margin: 0 calc( var(--side) * -1);
+		background-color: rgba(0, 0, 0, 0.4);
+
+	}
+
+	 .orange-photo img {
+		/* filter: brightness(60%); */
+	 }
+}
 
