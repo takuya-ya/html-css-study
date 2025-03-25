@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body	{margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+
+
+/* 基本 */
+.orange * {
+		margin: 0 ;
+}
+
+.orange img	{
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/* グリッド */
+.orange {
+	/* css変数 */
+	--side:20px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(2, auto);
+	row-gap: 30px;
+	/* 変数の適用 */
+	margin: 0 var(--side) 30px;
+}
+
+.orange-sub img {
+	max-width: 120px;
+}
+
+
+
