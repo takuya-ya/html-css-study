@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {margin: 0;
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif}
+
+
+/* 基本 */
+.burger * {
+	margin: 0;
+}
+
+.burger img	{
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+.burger-sub img {
+	max-width: 100px;
+}
+
+/* グリッド */
+.burger {
+	--side:20px;
+	display: grid;
+	grid-template-columns: 100px 1fr auto;
+	grid-template-rows: auto 180px;
+	column-gap: 15px;
+	row-gap: 30px;
+	margin: 0 var(--side) 30px ;
+}
+
+.burger-photo {
+	grid-template-columns: 1/4;
+	grid-template-rows: 1;
+}
+
+/* title */
+
+
