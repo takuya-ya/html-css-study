@@ -9,10 +9,204 @@ body	{margin: 0;
 	margin: 0;
 }
 
+/* グリッド */
+.peel {
+	--sideLR:20px;
+	/* TB = Top Bottom */
+	--sideTB:40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 170px auto 100px;
+	margin: var(--sideTB) var(--sideLR);
+	font-family: 'Noto Sans Japanese', sans-serif;
+}
+
 .peel img	{
 	width: 100%;
 	height: auto;
 	vertical-align: bottom;
 }
 
+/* 画像 */
+.peel-photo {
+	grid-column: 1/3;
+	grid-row: 2;
+	width: 60%;
+	justify-self: center;
+	align-self: center;
+}
+/* 日本語テキスト */
+.peel-jp {
+	grid-column: 2;
+	grid-row: 1/3;
+	writing-mode: vertical-rl;
+	justify-self: end;
+	align-self: start;
+	display: grid;
+	row-gap: 15px;
+}
 
+.peel-jp h2 {
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+.peel-jp p:nth-of-type(1) {
+	font-size: 16px;
+	font-weight: 700;
+	color: #444;
+}
+
+.peel-jp p:nth-of-type(2) {
+	font-size: 14px;
+	font-weight: 300;
+	/* 高さをセル内に入るよう調整している */
+	line-height: 1.8;
+	height: 12em;
+
+}
+
+/* 日本語メモ */
+.peel-jp-memo {
+	grid-column: 2;
+	grid-row: 3;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 10px;
+	border: solid 1px #aaa;
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 1.5;
+	justify-self: end;
+	align-self: end;
+}
+
+.peel::after {
+	grid-column: 1;
+	grid-row: 1/4;
+	content: '';
+	background-color: #222;
+	z-index: -1;
+	/* 背景を広げる*/
+	margin-left: calc(var(--sideLR) * -1);
+	margin-top: calc(var(--sideTB) * -1);
+}
+/* 英語テキスト */
+.peel-en{
+	grid-column: 1;
+	grid-row: 1/3;
+	color: #fff;
+	justify-self: start;
+	align-self: start;
+	color: #fff;
+	font-family: 'Monteserrat', sans-serif;
+	display: grid;
+	row-gap: 15px;
+}
+
+.peel-en h2 {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.peel-en p:nth-of-type(1) {
+	font-size: 16px;
+	font-weight: 500;
+}
+.peel-en p:nth-of-type(2) {
+	font-size: 12px;
+	font-weight: 300;
+	width: 50%;
+}
+
+/* 英語メモ */
+.peel-en-memo {
+	grid-column: 1;
+	grid-row: 3;
+	justify-self: start;
+	align-self: end;
+	color: #fff;
+	width: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: solid 1px #aaa;
+	font-family: 'Monteserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+@media(min-width:960px) {
+	.peel {
+		/* デバイスの幅から引いて、2で割ることで片側の幅を指定 */
+		--sideLR:calc((100vw - 960px)/2);
+	}
+}
+
+@media (max-width:767px) {
+	.peel {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6,auto);
+	}
+
+	.peel-jp {
+		grid-column: 1;
+		grid-row: 1;
+		/* tb = top bottom */
+		writing-mode: horizontal-tb;
+	}
+
+	/* htmlでwbrを指定した箇所が改行になる */
+	.peel-jp h2 {
+		word-break: keep-all;
+	}
+
+	/* 日本語テキスト */
+	.peel-jp p:nth-of-type(2) {
+		height:auto;
+	}
+
+	/* 日本語メモ */
+	.peel-jp-memo {
+		grid-column: 1;
+		grid-row: 2;
+		width: auto;
+		justify-self: stretch;
+		margin-top: 15px;
+	}
+
+	/* 写真 */
+	.peel-photo {
+		grid-column: 1;
+		grid-row: 3/5;
+		width: 80%;
+		margin: 30px 0;
+	}
+
+	/* 英語テキスト */
+	.peel-en {
+		grid-column: 1;
+		grid-row: 5/6;
+	}
+
+	.peel-en p:nth-of-type(2) {
+		width: auto;
+	}
+
+	.peel-en-memo {
+		grid-column: 1;
+		grid-row: 6;
+		width: auto;
+		justify-self: stretch;
+		margin-top: 15px;
+		color: #fff;
+	}
+
+	.peel::after {
+		grid-column: 1;
+		grid-row: 4/7;
+		margin-top: 0;
+		margin-right: calc(var(--sideLR)*-1);	
+	}
+}
