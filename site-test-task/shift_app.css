@@ -1,2 +1,23 @@
 @charset "UTF-8";
 
+body * {
+    margin: 0;
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
+}
+
+/* TODO:周囲の空白削除 */
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(100, 136, 253, 0.5);
+}
+
+.header-text span {
+    color: aquamarine;
+}
+
+.header-top button {
+    background-color: rgb(236, 232, 1);
+    
+}
