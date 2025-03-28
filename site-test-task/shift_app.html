@@ -13,13 +13,13 @@
         <header>
             <div class="header-top">
                 <p class="header-text">シフト作成が楽になる<span>楽々シフト</span></p>
-                <p class="header-inquiry-tell">0000-00-0000</p>
+                <p class="header-inquiry-tell">お問い合わせ 0000-00-0000</p>
                 <button>ログイン</button>
             </div>
             <nav class="header-menu">
                 <li>
                     <ul class="function">機能</ul>
-                    <ul class="case-studies">お問い合わせ</ul>
+                    <ul class="case-studies">事例</ul>
                     <ul class="how-it-workd">導入の流れ</ul>
                     <ul class="price">料金</ul>
                     <ul class="seminars">セミナー</ul>
@@ -28,16 +28,17 @@
         </header>
         
         <main>
-            <div class="hero">
+            <div class="hero" id="hero">
                 <div class="hero-left">
                     <h1 class="title">楽々シフト</h1>
                     <button class="login-button hero-login-button">ログイン</button>
                     <button class="trial-button hero-trial-button">無料お試し</button>
                 </div>
                 <div class="hero-right">
-                    <img src="" alt="シフトを表示したPCとタブレット。">
+                    <img src="./img/app-screen-sample.png" alt="シフトを表示したPCとタブレット。">
                 </div>
             </div>
+
             <section class="intro">
                 <h2 class="intro-title">
                     シフトの管理も打刻も、これ一つで簡単に
@@ -47,12 +48,58 @@
                 </p>
                 <img src="./img/intro-movie-capture.png" alt="アプリ説明用の動画キャプチャー" class="intro-img">
             </section>
-            <form action=""></form>
-            <section class="company-profile"></section>
-            <div class="floating-banner"></div>
+
+            <form action="#">
+                <h2 class="form-title">お問い合わせ</h2>
+                <div class="form-item"><label for="#">会社名</label><input type="text"></div>
+                <div class="form-item"><label for="#">お名前</label><input type="text"></div>
+                <div class="form-item"><label for="#">メールアドレス</label><input type="text"></div>
+                <div class="form-item"><label for="#">お電話番号</label><input type="text"></div>
+                <div class="form-item"><label for="#">郵便番号</label><input type="text"></div>
+                <button type="submit">送信する</button>
+            </form>
+
+            <section class="company-profile">
+                <p class="company-profile-title"></p>
+                <table class="company-info">
+                    <tr class="profile-item">
+                        <th>社名</th>
+                        <td>株式会社楽々シフト</td>
+                    </tr>
+                    <tr class="profile-item">
+                        <th>代表者</th>
+                        <td>山内卓也</td>
+                    </tr>
+                    <tr class="profile-item">
+                        <th>資本金</th>
+                        <td>10百万円</td>
+                    </tr>
+                    <tr class="profile-item">
+                        <th>従業員数</th>
+                        <td>100名
+                        </td>
+                    </tr>
+                    <tr class="profile-item">
+                        <th>事業内容</th>
+                        <td>アプリ開発事業</td>
+                    </tr>
+                </table>
+                <!-- グーグルマップ -->
+            </section>
+            <div class="floating-banner">
+                <p class="banner-text">利用開始月・翌月無料でお試し可能！</p>
+                <button class="trial-button banner-trial-button">無料お試し</button>
+            </div>
+            <div class="to-top">
+                <a href="#hero" class="to-top-link">Topへ</a>
+            </div>
         </main>
 
-        <footer></footer>
+        <footer>
+            <p>
+                &COPY;2025 株式会社 楽々シフト . All rights reserved.
+            </p>
+        </footer>
     
   </body>
 </html>
