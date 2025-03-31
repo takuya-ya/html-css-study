@@ -35,8 +35,10 @@
             <div class="hero" id="hero">
                 <div class="hero-left">
                     <h1 class="title">楽々シフト</h1>
-                    <button class="login-button hero-login-button">ログイン</button>
-                    <button class="trial-button hero-trial-button">無料お試し</button>
+                    <div class="hero-buttons">
+                        <button class="login-button hero-login-button">ログイン</button>
+                        <button class="trial-button hero-trial-button">無料お試し</button>
+                    </div>
                 </div>
                 <div class="hero-right">
                     <img src="./img/app-screen-sample.png" alt="シフトを表示したPCとタブレット。">
@@ -48,23 +50,41 @@
                     シフトの管理も打刻も、これ一つで簡単に
                 </h2>
                 <p class="intro-text">
-                    飲食店や小売店など、スタッフのシフト管理が必要な現場で活躍するアプリです。希望シフトの収集から自動割り当て、LINEやメールでの共有まで一括対応。忙しい店長の味方です。
+                    飲食店や小売店など、スタッフのシフト管理が必要な現場で活躍するアプリです。<br>希望シフトの収集から自動割り当て、LINEやメールでの共有まで一括対応。忙しい店長の味方です。
                 </p>
-                <img src="./img/intro-movie-capture.png" alt="アプリ説明用の動画キャプチャー" class="intro-img">
+                <img class="intro-img" src="./img/intro-movie-capture.png" alt="アプリ説明用の動画キャプチャー" class="intro-img">
             </section>
 
-            <form action="#">
+            
+            <form class="inquiry" action="#">
                 <h2 class="form-title">お問い合わせ</h2>
-                <div class="form-item"><label for="#">会社名</label><input type="text"></div>
-                <div class="form-item"><label for="#">お名前</label><input type="text"></div>
-                <div class="form-item"><label for="#">メールアドレス</label><input type="text"></div>
-                <div class="form-item"><label for="#">お電話番号</label><input type="text"></div>
-                <div class="form-item"><label for="#">郵便番号</label><input type="text"></div>
-                <button type="submit">送信する</button>
+
+                <div class="form-item form-item1">
+                    <label for="#">会社名</label>
+                    <input type="text">
+                </div>
+                <div class="form-item form-item2">
+                    <label for="#">お名前</label>
+                    <input type="text">
+                </div>
+                <div class="form-item form-item3">
+                    <label for="#">メールアドレス</label>
+                    <input type="text">
+                </div>
+                <div class="form-item form-item4">
+                    <label for="#">お電話番号</label>
+                    <input type="text">
+                </div>
+                <div class="form-item form-item5">
+                    <label for="#">郵便番号</label>
+                    <input type="text">
+                </div>
+
+                <button class="inquiry-button" type="submit">送信する</button>
             </form>
 
             <section class="company-profile">
-                <p class="company-profile-title"></p>
+                <h2 class="company-profile-title">会社概要</h2>
                 <table class="company-info">
                     <tr class="profile-item">
                         <th>社名</th>
