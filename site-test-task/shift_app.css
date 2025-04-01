@@ -81,7 +81,7 @@ display: flex;
     
 }
 
-.hero-buttons .trial-button {
+.trial-button {
     background-color: aquamarine;
 }
 
@@ -179,13 +179,51 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: auto;
+    border-spacing: 0 30px;
+}
+
+.company-info th,
+.company-info td {
+    border-bottom: 1px black solid;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.company-info th {
+    width: 10rem;
 }
 
 .company-info td {
-    border-bottom: 1px black solid;
+    width: 30rem;
 }
 
+/* map */
+.map {
+    display: block;
+    margin: auto;
+}
 
+/* banner */
+.floating-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    gap: 200px;
+    background-color: rgba(210, 210, 212, 0.719);
+    padding-right: 12%;
+}
 
-
-
+.banner-text,
+.banner-trial-button {
+    font-size: 1.3rem;
+}
+.banner-text {
+}
+.banner-trial-button {
+    width: 8%;
+    border-radius: 30%;
+    border: none;
+}
