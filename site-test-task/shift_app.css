@@ -207,10 +207,14 @@ h2 {
 
 /* banner */
 .floating-banner {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
     gap: 200px;
     background-color: rgba(210, 210, 212, 0.719);
     padding-right: 12%;
@@ -218,12 +222,49 @@ h2 {
 
 .banner-text,
 .banner-trial-button {
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
-.banner-text {
-}
+
 .banner-trial-button {
-    width: 8%;
+    width: 15%;
     border-radius: 30%;
     border: none;
+}
+
+.to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 80px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(229, 255, 0, 0.192);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+}
+
+.to-top a {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.356);
+    text-decoration: none;
+    padding: 1.8rem .5rem;
+}
+
+.to-top,
+.to-top a {
+    transition: 1s;
+}
+
+.to-top:hover {
+    background-color: yellow;
+}
+
+.to-top a:hover {
+    color: black;
+}
+footer {
+    /* marginでは十分な余白を作成出来ない */
+    padding-bottom: 60px;
 }
