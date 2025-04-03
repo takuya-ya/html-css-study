@@ -1,45 +1,133 @@
 @charset "UTF-8";
 
+
+html {
+    /* デフォルトで16px */
+    font-size: 100%;
+}
+
 body * {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans JP', 'Roboto', sans-serif;
 }
 
+.main {
+    padding: 0 28px 30px;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
 /* top message */
 .title-message {
-    margin: 20px;
     text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .sub-message {
-    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.sub-message h2 {
     text-align: center;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 150;
 }
 
 /* register mail */
-.register-mail-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 25vh;
-    margin: auto;
-    margin-top: 50px;
-    background-color: rgba(185, 180, 180, 0.053);
-    border: 0.5px solid rgba(75, 73, 73, 0.07);
+.input {
+    max-width: 580px;
+    margin: 0 auto 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgba(177, 157, 157, 0.053);
+    border: 0.5px solid rgba(75, 73, 73, 0.03);
+    border-radius: 10px;
+    font-size: 20%;
 }
 
-/* 直下の子要素にだけ適用 */
-.register-mail-address > * {
-    width: 84%;
+.input-message {
+    margin-bottom: 30px;
 }
 
 .form-description {
     color: rgba(75, 73, 73, 0.675);
-    margin-bottom: 10px;
 }
 
-.
+.input-message input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.5px solid rgba(75, 73, 73, 0.07);
+    border-radius: 4px;
+    padding: 0 8px;
+    height: 44px;
+}
+
+.input .terms-rinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 4px;
+}
+
+.input .terms-rinks a {
+    text-decoration: none;
+    color: rgb(32, 143, 227);;
+}
+
+.input-button button {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(32, 178, 227);
+    border-color: rgba(10, 178, 220, 0.686);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.login {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icon-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-description {
+    margin-bottom: 16px;
+}
+
+/* フッター */
+footer {
+    background: rgba(128, 128, 128, 0.087);
+    padding: 0 10px 34px;
+    font-size: 10px;
+    
+}
+
+footer .footer-contents {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.footer-contents p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer ul {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+    gap: 30px;
+    list-style: none;
+}
