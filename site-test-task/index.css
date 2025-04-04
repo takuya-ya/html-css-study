@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 body {
     margin: 0;
     padding: 0;
@@ -15,11 +14,12 @@ body * {
 /* header-top */
 .header-top {
     width: 100%;
+    height: 2.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #00a9e1;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
 }
 
@@ -44,29 +44,55 @@ body * {
     align-items: center;
     text-decoration: none;
     color: black;
+    border-radius: 25px;
 }
 
 .header-trial-button {
+    background-color: #00a9e1;
     border-radius: 10px;
     font-size: 1rem;
     width: 8%;
     height: 2rem;
+    border: solid 1px white;
+    color: white;
 }
 
 /* header-menu */
-.header-menu {
+/* TODO:スクロール後に固定表示　sticky動作しない　原因不明 */
+header nav {
+    /* position: sticky;
+    top: 0;
+    z-index: 10; */
     margin: 1rem 0;
 }
-.header-menu li{
+
+.header-menu ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
     gap: 60px;
 }
 
-.header-menu li ul {
+.header-menu ul li {
+    padding: 0.3rem 0.7rem;
+    border: white solid 0.5px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* TODO: aにborderでボタンかすべき？ */
+.header-menu li:hover {
+    border-radius: 10px;
+    border: black solid 0.5px;
+}
+
+.header-menu a:hover {
+    color: black;
 }
 
 /* hero */
@@ -84,28 +110,33 @@ display: flex;
 }
 
 .hero-left .title {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: rgb(0, 183, 255);
 }
 
 .hero-left .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
 }
 
 .hero-trial-button {
-    width: 40%;
-    font-size: 2.5rem;
-    border-radius: 30%;
+    width: 30%;
+    font-size: 1.8rem;
+    border-radius: 25px;
 }
 
 .hero-login-button {
-    width: 40%;
-    font-size: 2.5rem;
-    border-radius: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 25px;
     background-color: yellow;
+    color: black;
 }
 
 .hero-right {
@@ -114,6 +145,7 @@ display: flex;
 
 .hero-right img {
     width: 100%;
+    border-radius: 25px;
 }
 
 /* intro */
@@ -127,7 +159,7 @@ display: flex;
 h2 {
     margin-top: 8rem;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -137,7 +169,7 @@ h2 {
 
 .intro-text {
     margin: 2rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
 }
@@ -145,18 +177,29 @@ h2 {
 /* TODO:動画に切り替え。現在画像で代替している */
 .intro-img {
     margin: auto;
-    width: 50%;
+    width: 30%;
+    height: auto;
+    border-radius: 25px;
 }
 
 /* related link */
 .related-link {
-    margin: 100px;
+    margin: 30px;
     text-align: center;
 }
 
 .related-link .related-link-img {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    margin-top: 128px;
+
+}
+
+.related-link-img img {
+    /* margin: auto; */
+    /* margin-top: 2px; */
+    width: 31%;
+    height: auto;
+    border-radius: 25px;
 }
 
 .related-link a {
@@ -164,11 +207,11 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 7vh;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 5px;
     padding-bottom: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
 }
@@ -186,8 +229,8 @@ h2 {
 .related-link a::after {
     display: block;
     content: '';
-    width: 10%;
-    height: 50%;
+    width: 100px;
+    height: 100px;
     background-repeat: no-repeat;
     background-size: contain; /* 全体が入るよう縮小 */
     background-position: center;
@@ -204,19 +247,18 @@ h2 {
     margin: auto;
 }
 
-.inquiry .form-title {
-    margin-bottom: 2rem;
+.inquiry h2,
+.company-profile h2 {
+    margin-top: 4rem;
+    font-size: 1.5rem;
 }
 
 .inquiry .form-item {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
-}
-
-.inquiry .form-item {
-    font-size: 1.7rem;
+    width: 70%;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -229,7 +271,7 @@ h2 {
     border-radius: 10%;
     color: white;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .inquiry .form-item input {
@@ -237,18 +279,23 @@ h2 {
 }
 
 .inquiry-button {
-    width: 21%;
-    margin-left: auto;
-    font-size: 2rem;
+    width: 11%;
+    margin-left: 60%;
+    font-size: 1rem;
     border-radius: 10%;
 }
 
 /*  company-profile */
+.company-profile {
+    width: 50%;
+    margin: auto;
+}
+
 .company-info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 70%;
     margin: auto;
     border-spacing: 0 30px;
 }
@@ -272,6 +319,8 @@ h2 {
 .map {
     display: block;
     margin: auto;
+    margin-top: 40px;
+    width: 35%;
 }
 
 /* banner */
@@ -283,7 +332,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
+    height: 2rem;
     gap: 200px;
     background-color: rgba(210, 210, 212, 0.719);
     padding-right: 12%;
@@ -291,32 +340,31 @@ h2 {
 
 .banner-text,
 .banner-trial-button {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .banner-trial-button {
-    width: 15%;
-    border-radius: 30%;
+    width: 9%;
+    border-radius: 25px;
     border: none;
 }
 
 /* TODO:スクロール量に応じて表示非表示の切り替え */
 .to-top {
     position: fixed;
-    right: 30px;
+    right: 10%;
     bottom: 80px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(229, 255, 0, 0.192);
-    width: 7rem;
-    height: 7rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
 }
 
 .to-top a {
-    font-size: 2rem;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.356);
     text-decoration: none;
     padding: 1.8rem .5rem;
@@ -337,7 +385,7 @@ h2 {
 
 footer {
     /* marginでは十分な余白を作成出来ない */
-    padding-bottom: 60px;
+    padding-bottom: 15px;
     margin: 50px;
     text-align: center;
 }
