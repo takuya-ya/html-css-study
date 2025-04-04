@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-
+body {
+    margin: 0;
+    padding: 0;
+}
+    
 html {
     /* デフォルトで16px */
     font-size: 100%;
@@ -94,9 +98,8 @@ body * {
 /* フッター */
 footer {
     background: rgba(128, 128, 128, 0.087);
-    padding: 0 10px 34px;
+    padding: 0 10px 10px;
     font-size: 10px;
-    
 }
 
 footer .footer-contents {
@@ -104,7 +107,7 @@ footer .footer-contents {
     display: flex;
     justify-content: end;
     align-items: end;
-    height: 40px;
+    height: 25px;
     margin: 0 10px;
 }
 
