@@ -50,7 +50,7 @@ body * {
 .header-trial-button {
     background-color: #00a9e1;
     border-radius: 10px;
-    font-size: 1rem;
+    font-size: 1.4vw;
     width: 8%;
     height: 2rem;
     border: solid 1px white;
@@ -58,6 +58,7 @@ body * {
 }
 
 /* header-menu */
+
 /* TODO:スクロール後に固定表示　sticky動作しない　原因不明 */
 header nav {
     /* position: sticky;
@@ -66,11 +67,11 @@ header nav {
     margin: 1rem 0;
 }
 
-.header-menu ul{
+.header-menu ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    gap: 60px;
+    gap: 4%;
 }
 
 .header-menu ul li {
@@ -110,7 +111,7 @@ display: flex;
 }
 
 .hero-left .title {
-    font-size: 3.5rem;
+    font-size: 6vw;
     color: rgb(0, 183, 255);
 }
 
@@ -123,7 +124,7 @@ display: flex;
 
 .hero-trial-button {
     width: 30%;
-    font-size: 1.8rem;
+    font-size: 2vw;
     border-radius: 25px;
 }
 
@@ -133,7 +134,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2vw;
     border-radius: 25px;
     background-color: yellow;
     color: black;
@@ -367,7 +368,7 @@ h2 {
     justify-content: center;
     align-items: center;
     height: 2rem;
-    gap: 200px;
+    gap: 8%;
     background-color: rgba(210, 210, 212, 0.719);
     padding-right: 12%;
 }
@@ -418,12 +419,22 @@ h2 {
 }
 
 footer {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-
     /* marginでは十分な余白を作成出来ない */
     padding-bottom: 15px;
     margin: 30px;
     text-align: center;
+}
+
+@media(max-width:1000px) {
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: .95rem;
+    }
+
+}
+
+@media(max-width:760px) {
 }
