@@ -333,6 +333,30 @@ h2 {
     width: 35%;
 }
 
+.icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns-icon {
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    border-radius: 20px;
+}
+
 /* banner */
 .floating-banner {
     position: fixed;
@@ -394,8 +418,12 @@ h2 {
 }
 
 footer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
     /* marginでは十分な余白を作成出来ない */
     padding-bottom: 15px;
-    margin: 50px;
+    margin: 30px;
     text-align: center;
 }
