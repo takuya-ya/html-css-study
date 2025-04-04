@@ -283,6 +283,16 @@ h2 {
     margin-left: 60%;
     font-size: 1rem;
     border-radius: 10%;
+    border: none;
+    
+    transition: all 0.05s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.inquiry-button:active {
+    transform: translateY(2px);
+    transform: scale(0.92);
+    box-shadow: none;
 }
 
 /*  company-profile */
